@@ -1,0 +1,12 @@
+version: '3'
+services: 
+  expa2podio:
+    image: k2589/oswebandpy:test2
+    ports: 
+      - "127.0.0.1:5050:5000"
+    environment: 
+      - LOGGING_LEVEL=DEBUG
+      - LOGGING_CONSOLE=true
+    volumes: 
+      - ./src:/app
+    restart: always
