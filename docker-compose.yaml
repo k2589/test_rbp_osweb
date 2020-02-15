@@ -1,12 +1,13 @@
 version: '3'
 services: 
   expa2podio:
-    image: k2589/osweb4py:0.5.4
+    image: k2589/armosw:0.2
     ports: 
-      - "127.0.0.1:5050:5000"
+      - "5051:5000"
     environment: 
       - LOGGING_LEVEL=DEBUG
       - LOGGING_CONSOLE=true
     volumes: 
       - ./src:/app
     restart: always
+ 
